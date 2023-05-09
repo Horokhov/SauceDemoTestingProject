@@ -1,23 +1,20 @@
-package org.example;
+package org.test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.pageObjects.LogInPage;
+import org.pageObjects.ProductCatalogue;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class StandAloneTest {
     public static void main(String[] args) throws IOException {
@@ -25,59 +22,35 @@ public class StandAloneTest {
         String productName = "Sauce Labs Bolt T-Shirt";
 
         WebDriver driver = new ChromeDriver();
-        driver.get("https://www.saucedemo.com/");
-        driver.manage().window().maximize();
-
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
         //LOG IN
+        LogInPage logInPage = new LogInPage(driver);
 
-        driver.findElement(By.id("user-name")).sendKeys("standard_user");
+        logInPage.goTo("https://www.saucedemo.com/");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
-        driver.findElement(By.id("password")).sendKeys("secret_sauce");
-
-        driver.findElement(By.id("login-button")).click();
-
+        logInPage.loggination("standard_user", "secret_sauce" );
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 
         //FILTER
+        ProductCatalogue productCatalogue = new ProductCatalogue(driver);
 
-        WebElement filterDropdown = driver.findElement(By.cssSelector("select.product_sort_container"));
-
-        Select select = new Select(filterDropdown);
-
-        select.selectByVisibleText("Name (Z to A)");
-
+        productCatalogue.filterCatalogue("Name (Z to A)");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
         //VALIDATION OF THE LINKS
-
-        List<WebElement> socialLinks = driver.findElements(By.xpath("//a[@rel='noreferrer']"));
+        List<Integer> socialLinksCodes = productCatalogue.getSocialLinksCodes("HEAD");
 
         SoftAssert softAssert = new SoftAssert();
 
-        for(WebElement link:socialLinks) {
-
-            String url = link.getAttribute("href");
-
-            if(url == null || url.isEmpty()){
-                Assert.assertFalse(true);
-                System.out.println("The link does not exists or broken!");
-                continue;
-            }
-
-            HttpURLConnection connection = (HttpURLConnection)(new URL(url).openConnection());
-            connection.setRequestMethod("HEAD");
-            connection.connect();
-
-            int responseCode = connection.getResponseCode();
-
-            softAssert.assertTrue(responseCode<400,"The link with text " + link.getText() + " is broken with code "+responseCode);
+        try{for(int codes:socialLinksCodes) {
+            softAssert.assertTrue(codes<400, "Social link is broken code: "+codes);
+        }} catch (AssertionError assertionError) {
+          softAssert.assertAll();
         }
-
         //CHECKOUT
 
-        List<WebElement> productList = driver.findElements(By.className("inventory_item"));
+        List<WebElement> productList = productCatalogue.getProductList();
 
         WebElement boltsTshirt = productList.stream().filter(tshirt ->
                 tshirt.findElement(By.className("inventory_item_name")).getText().equals(productName)).findFirst().orElse(null);
