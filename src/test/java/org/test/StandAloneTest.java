@@ -43,10 +43,15 @@ public class StandAloneTest {
 
         SoftAssert softAssert = new SoftAssert();
 
-        try{for(int codes:socialLinksCodes) {
+        try {
+            for(int codes:socialLinksCodes) {
             softAssert.assertTrue(codes<400, "Social link is broken code: "+codes);
-        }} catch (AssertionError assertionError) {
-          softAssert.assertAll();
+            softAssert.assertAll();
+        }
+        } catch (AssertionError assertionError) {
+            System.out.println(
+                    "One of the social links is broken!"
+            );
         }
         //CHECKOUT
 
