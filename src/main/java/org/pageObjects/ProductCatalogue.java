@@ -1,5 +1,7 @@
 package org.pageObjects;
 
+import org.abstractComponents.AbstractComponent;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,12 +12,13 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
-public class ProductCatalogue {
+public class ProductCatalogue extends AbstractComponent {
     WebDriver driver;
     public ProductCatalogue(WebDriver driver) {
+        super(driver);
+
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
@@ -28,6 +31,8 @@ public class ProductCatalogue {
 
     @FindBy(xpath = "//a[@rel='noreferrer']")
     List<WebElement> socialLinks;
+
+    By addToCart = By.tagName("button");
 
     public void filterCatalogue(String visibleText) {
         Select select = new Select(filterDropdown);
@@ -53,5 +58,15 @@ public class ProductCatalogue {
             codes.add(responseCode);
         }
         return codes;
+    }
+    public WebElement getProductByName(String productName) {
+        WebElement boltsTshirt = getProductList().stream().filter(tshirt ->
+                tshirt.findElement(By.className("inventory_item_name")).getText().equals(productName)).findFirst().orElse(null);
+        return boltsTshirt;
+    }
+
+    public void addProductToCart(String productName){
+        WebElement product = getProductByName(productName);
+        product.findElement(addToCart).click();
     }
 }

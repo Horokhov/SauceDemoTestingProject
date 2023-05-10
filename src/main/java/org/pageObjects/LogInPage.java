@@ -1,6 +1,5 @@
 package org.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,12 +21,15 @@ public class LogInPage {
     @FindBy(id="login-button")
     WebElement loginButton;
 
-    public void loggination(String username, String password) {
+    public ProductCatalogue loggination(String username, String password) {
         elementUsername.sendKeys(username);
 
         elementPassword.sendKeys(password);
 
         loginButton.click();
+
+        ProductCatalogue productCatalogue = new ProductCatalogue(driver);
+        return productCatalogue;
     }
 
     public void goTo(String url) {
