@@ -18,7 +18,7 @@ public class SubmitOrderTest extends  BaseTest {
         @Test
         public void submitOrder() throws IOException {
 
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
 
         ProductCatalogue productCatalogue = logInPage.loggination("standard_user", "secret_sauce" );
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
