@@ -32,13 +32,13 @@ public class ProductCatalogue extends AbstractComponent {
     @FindBy(xpath = "//a[@rel='noreferrer']")
     List<WebElement> socialLinks;
 
-    @FindBy(className = "active_option")
+    @FindBy(xpath = "//div[@class='right_component']//span//span")
     WebElement activeOption;
     By addToCart = By.tagName("button");
 
 
     public String getActiveOption(){
-        String activeFilter = activeOption.getText();
+        String activeFilter = activeOption.getAttribute("innerHTML");
         return activeFilter;
     }
 

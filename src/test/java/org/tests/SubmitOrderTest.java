@@ -18,14 +18,8 @@ public class SubmitOrderTest extends  BaseTest {
         @Test
         public void submitOrder() throws IOException {
 
-
-
-        ProductCatalogue productCatalogue = logInPage.loggination("standard_user", "secret_sauce" );
+            ProductCatalogue productCatalogue = logInPage.loggination("standard_user", "secret_sauce" );
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-
-        //FILTER
-        productCatalogue.filterCatalogue("Name (Z to A)");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
         //VALIDATION OF THE LINKS
         List<Integer> socialLinksCodes = productCatalogue.getSocialLinksCodes("HEAD");
