@@ -21,7 +21,6 @@ public class SubmitOrderTest extends  BaseTest {
             ProductCatalogue productCatalogue = logInPage.loggination("standard_user", "secret_sauce" );
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 
-        //CHECKOUT
         productCatalogue.getProductByName(productName);
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
