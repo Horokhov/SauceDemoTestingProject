@@ -5,10 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-import org.pageObjects.CartPage;
-import org.pageObjects.CheckoutPage;
-import org.pageObjects.LogInPage;
-import org.pageObjects.ProductCatalogue;
+import org.pageObjects.*;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
@@ -74,16 +71,18 @@ public class StandAloneTest {
 
        checkoutPage.pastingData("Max", "Horokhov", "79020");
 
-       checkoutPage.goToOrderConfirmation();
+       OrderInfoPage orderInfoPage = checkoutPage.goToOrderConfirmation();
 
-       driver.findElement(By.id("finish")).click();
+       CheckoutCompletePage checkoutCompletePage = orderInfoPage.endOrder();
 
-        String header = driver.findElement(By.className("complete-header")).getText();
-        String text = driver.findElement(By.className("complete-text")).getText();
-        Assert.assertEquals(header,"Thank you for your order!");
-        Assert.assertEquals(text,"Your order has been dispatched, and will arrive just as fast as the pony can get there!");
+       String headerText = checkoutCompletePage.getHeaderText();
+       Assert.assertEquals(headerText,"Thank you for your order!");
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+       String paragraphText = checkoutCompletePage.getParagraphText();
+       Assert.assertEquals(paragraphText,"Your order has been dispatched, and will arrive just as fast as the pony can get there!");
+
+       checkoutCompletePage.goToCatalogue();
+       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
     }
 }

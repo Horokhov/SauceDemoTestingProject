@@ -32,7 +32,10 @@ public class CheckoutPage {
         postalCode.sendKeys(zip);
     }
 
-    public void goToOrderConfirmation() {
+    public OrderInfoPage goToOrderConfirmation() {
         continueButton.click();
+
+        OrderInfoPage orderInfoPage = new OrderInfoPage(driver);
+        return orderInfoPage;
     }
 }
