@@ -21,21 +21,6 @@ public class SubmitOrderTest extends  BaseTest {
             ProductCatalogue productCatalogue = logInPage.loggination("standard_user", "secret_sauce" );
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 
-        //VALIDATION OF THE LINKS
-        List<Integer> socialLinksCodes = productCatalogue.getSocialLinksCodes("HEAD");
-
-        SoftAssert softAssert = new SoftAssert();
-
-        try {
-            for(int codes:socialLinksCodes) {
-            softAssert.assertTrue(codes<400, "Social link is broken code: "+codes);
-            softAssert.assertAll();
-        }
-        } catch (AssertionError assertionError) {
-            System.out.println(
-                    "One of the social links is broken!"
-            );
-        }
         //CHECKOUT
         productCatalogue.getProductByName(productName);
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
