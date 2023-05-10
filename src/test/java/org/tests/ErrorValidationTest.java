@@ -13,4 +13,9 @@ public class ErrorValidationTest extends BaseTest {
         Assert.assertEquals("Epic sadface: Username and password do not match any user in this service",logInPage.getErrorMessage());
     }
 
+    @Test
+    public void noLoginErrorValidation() {
+        ProductCatalogue productCatalogue = logInPage.loggination("", "" );
+        Assert.assertEquals("Epic sadface: Username is required",logInPage.getErrorMessage());
+    }
 }
