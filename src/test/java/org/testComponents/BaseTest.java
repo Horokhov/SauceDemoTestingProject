@@ -40,7 +40,7 @@ public class BaseTest {
        return driver;
     }
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public LogInPage launchApplication() throws IOException {
 
         driver = initializeDriver();
@@ -52,7 +52,7 @@ public class BaseTest {
         return logInPage;
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void shutDown(){
         driver.close();
     }
