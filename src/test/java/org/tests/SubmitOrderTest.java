@@ -1,28 +1,26 @@
-package org.test;
+package org.tests;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.pageObjects.*;
+import org.testComponents.BaseTest;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.time.Duration;
 import java.util.*;
 
-public class StandAloneTest {
+public class SubmitOrderTest extends  BaseTest {
     private static String productName = "Sauce Labs Bolt T-Shirt";
-    public static void main(String[] args) throws IOException {
 
-        WebDriver driver = new ChromeDriver();
+
+        @Test
+        public void submitOrder() throws IOException {
+        BaseTest baseTest = new BaseTest();
 
         //LOG IN
-        LogInPage logInPage = new LogInPage(driver);
+        LogInPage logInPage = launchApplication("https://www.saucedemo.com/");
 
         logInPage.goTo("https://www.saucedemo.com/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -31,7 +29,6 @@ public class StandAloneTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 
         //FILTER
-
         productCatalogue.filterCatalogue("Name (Z to A)");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
@@ -51,10 +48,7 @@ public class StandAloneTest {
             );
         }
         //CHECKOUT
-
-
-
-       productCatalogue.getProductByName(productName);
+        productCatalogue.getProductByName(productName);
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
        productCatalogue.addProductToCart(productName);
@@ -84,5 +78,5 @@ public class StandAloneTest {
        checkoutCompletePage.goToCatalogue();
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
-    }
-}
+    }}
+

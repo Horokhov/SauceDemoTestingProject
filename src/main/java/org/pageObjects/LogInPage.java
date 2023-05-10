@@ -34,8 +34,6 @@ public class LogInPage {
 
     public void goTo(String url) {
         driver.get(url);
-
-        driver.manage().window().maximize();
     }
 
 }
