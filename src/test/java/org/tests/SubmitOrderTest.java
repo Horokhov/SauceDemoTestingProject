@@ -17,13 +17,8 @@ public class SubmitOrderTest extends  BaseTest {
 
         @Test
         public void submitOrder() throws IOException {
-        BaseTest baseTest = new BaseTest();
 
-        //LOG IN
-        LogInPage logInPage = launchApplication("https://www.saucedemo.com/");
-
-        logInPage.goTo("https://www.saucedemo.com/");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
         ProductCatalogue productCatalogue = logInPage.loggination("standard_user", "secret_sauce" );
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
@@ -77,6 +72,5 @@ public class SubmitOrderTest extends  BaseTest {
 
        checkoutCompletePage.goToCatalogue();
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
-
     }}
 

@@ -21,6 +21,14 @@ public class LogInPage {
     @FindBy(id="login-button")
     WebElement loginButton;
 
+    @FindBy(xpath = "//h3[@data-test='error']")
+    WebElement logInError;
+
+
+    public String getErrorMessage(){
+       String message = logInError.getText();
+       return message;
+    }
     public ProductCatalogue loggination(String username, String password) {
         elementUsername.sendKeys(username);
 
@@ -32,8 +40,8 @@ public class LogInPage {
         return productCatalogue;
     }
 
-    public void goTo(String url) {
-        driver.get(url);
+    public void goTo() {
+        driver.get("https://www.saucedemo.com/");
     }
 
 }

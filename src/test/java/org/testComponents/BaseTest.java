@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.pageObjects.LogInPage;
+import org.testng.annotations.*;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,6 +14,7 @@ import java.util.Properties;
 
 public class BaseTest {
     public WebDriver driver;
+    public LogInPage logInPage;
     public WebDriver initializeDriver() throws IOException {
 
         Properties properties = new Properties();
@@ -38,14 +40,20 @@ public class BaseTest {
        return driver;
     }
 
-    public LogInPage launchApplication(String url) throws IOException {
+    @BeforeMethod
+    public LogInPage launchApplication() throws IOException {
 
         driver = initializeDriver();
 
-        LogInPage logInPage = new LogInPage(driver);
+        logInPage = new LogInPage(driver);
 
-        logInPage.goTo(url);
+        logInPage.goTo();
 
         return logInPage;
+    }
+
+    @AfterMethod
+    public void shutDown(){
+        driver.close();
     }
 }

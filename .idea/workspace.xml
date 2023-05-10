@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27a6fb1f-e55b-4503-8d9b-f9975005fb5d" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/resources/GlobalData.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/testComponents/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/tests/ErrorValidationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/pageObjects/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pageObjects/LogInPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/StandAloneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tests/SubmitOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/resources/GlobalData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/resources/GlobalData.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/testComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/testComponents/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/tests/SubmitOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tests/SubmitOrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.SubmitOrderTest">
+  <component name="RunManager" selected="TestNG.ErrorValidationTest">
     <configuration name="SubmitOrderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.tests.SubmitOrderTest" />
       <module name="SauceDemoTestingProject" />
@@ -53,6 +53,23 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ErrorValidationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemoTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.tests.ErrorValidationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -76,6 +93,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ErrorValidationTest" />
         <item itemvalue="TestNG.SubmitOrderTest" />
         <item itemvalue="Application.SubmitOrderTest" />
       </list>
@@ -132,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683685567496</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1">
+      <created>1683694508225</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683694508225</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
