@@ -45,7 +45,7 @@ public class BaseTest {
            driver = new EdgeDriver();
 
        }
-
+       driver.manage().window().maximize();
        return driver;
     }
 
