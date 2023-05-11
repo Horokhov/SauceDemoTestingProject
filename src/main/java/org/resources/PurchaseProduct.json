@@ -1,0 +1,18 @@
+[
+  {
+      "username" : "standard_user",
+      "password" : "secret_sauce",
+      "productName" : "Sauce Labs Bolt T-Shirt",
+      "name": "Max",
+      "surname": "Horokhov",
+      "zip": "79020"
+  },
+  {
+    "username" : "problem_user",
+    "password" : "secret_sauce",
+    "productName" : "Sauce Labs Onesie",
+    "name": "Max",
+    "surname": "Horokhov",
+    "zip": "79020"
+  }
+]

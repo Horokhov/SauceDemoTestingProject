@@ -3,7 +3,7 @@
 <suite parallel="tests" name="Errors">
     <groups>
         <run>
-            <include name="Error"/>
+            <include name="Filter"/>
         </run>
     </groups>
     <test thread-count="5" name="SubmitOrderTest">

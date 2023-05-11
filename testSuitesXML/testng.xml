@@ -3,7 +3,7 @@
 <suite parallel="tests" name="All Test Suite">
     <test thread-count="5" name="SubmitOrderTest">
         <classes>
-            <class name="org.tests.SubmitOrderTest"/>
+            <class name="org.tests.PurchaseProductTest"/>
         </classes>
     </test>
     <test thread-count="5" name="CatalogueFiltersTest">

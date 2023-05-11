@@ -9,7 +9,7 @@ import java.time.Duration;
 
 public class CatalogueFiltersTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"Filter"})
     public void allFiltersValidation() {
         ProductCatalogue productCatalogue = logInPage.loggination("standard_user", "secret_sauce" );
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));

@@ -1,41 +1,39 @@
 package org.tests;
 
-import org.openqa.selenium.WebDriver;
 import org.pageObjects.*;
 import org.testComponents.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
 import java.time.Duration;
 import java.util.*;
 
-public class SubmitOrderTest extends  BaseTest {
+public class PurchaseProductTest extends  BaseTest {
 
         @Test(dataProvider = "getData", groups = {"Purchase"})
-        public void submitOrder(String username, String password, String productName) throws IOException {
+        public void submitOrder(HashMap<String, String> input) throws IOException {
 
-            ProductCatalogue productCatalogue = logInPage.loggination(username, password );
+            ProductCatalogue productCatalogue = logInPage.loggination(input.get("username"), input.get("password") );
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 
-        productCatalogue.getProductByName(productName);
+        productCatalogue.getProductByName(input.get("productName"));
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
-       productCatalogue.addProductToCart(productName);
+       productCatalogue.addProductToCart(input.get("productName"));
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
        CartPage cartPage = productCatalogue.goToCart();
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
-       Boolean match = cartPage.verifyCartProducts(productName);
+       Boolean match = cartPage.verifyCartProducts(input.get("productName"));
        Assert.assertTrue(match);
 
        CheckoutPage checkoutPage = cartPage.checkout();
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
-       checkoutPage.pastingData("Max", "Horokhov", "79020");
+       checkoutPage.pastingData(input.get("name"), input.get("surname"), input.get("zip"));
 
        OrderInfoPage orderInfoPage = checkoutPage.goToOrderConfirmation();
 
@@ -52,8 +50,28 @@ public class SubmitOrderTest extends  BaseTest {
     }
     @DataProvider
     public Object[][] getData() {
-           return new Object[][] {{"standard_user", "secret_sauce", "Sauce Labs Bolt T-Shirt" },
-                                  {"problem_user", "secret_sauce", "Sauce Labs Onesie"}};
+
+            HashMap<String, String> dataMap = new HashMap<>();
+
+            dataMap.put("username", "standard_user");
+            dataMap.put("password", "secret_sauce");
+            dataMap.put("productName", "Sauce Labs Bolt T-Shirt");
+            dataMap.put("name", "Max");
+            dataMap.put("surname", "Horokhov");
+            dataMap.put("zip", "79020");
+
+
+        HashMap<String, String> dataMap1 = new HashMap<>();
+
+        dataMap1.put("username", "problem_user");
+        dataMap1.put("password", "secret_sauce");
+        dataMap1.put("productName", "Sauce Labs Onesie");
+        dataMap1.put("name", "Max");
+        dataMap1.put("surname", "Horokhov");
+        dataMap1.put("zip", "79020");
+
+           return new Object[][] {{dataMap},
+                                  {dataMap1}};
         }
 
 }
