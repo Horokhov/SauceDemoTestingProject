@@ -5,6 +5,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.pageObjects.*;
 import org.testComponents.BaseTest;
+import org.testComponents.RetryAnalyzer;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -16,7 +17,7 @@ import java.util.*;
 
 public class PurchaseProductTest extends  BaseTest {
 
-        @Test(dataProvider = "getData", groups = {"Purchase"})
+        @Test(dataProvider = "getData", groups = {"Purchase"}, retryAnalyzer = RetryAnalyzer.class)
         public void submitOrder(HashMap<String, String> input) throws IOException {
 
             ProductCatalogue productCatalogue = logInPage.loggination(input.get("username"), input.get("password") );
