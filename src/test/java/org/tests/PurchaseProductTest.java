@@ -49,29 +49,11 @@ public class PurchaseProductTest extends  BaseTest {
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
     }
     @DataProvider
-    public Object[][] getData() {
+    public Object[][] getData() throws IOException {
 
-            HashMap<String, String> dataMap = new HashMap<>();
-
-            dataMap.put("username", "standard_user");
-            dataMap.put("password", "secret_sauce");
-            dataMap.put("productName", "Sauce Labs Bolt T-Shirt");
-            dataMap.put("name", "Max");
-            dataMap.put("surname", "Horokhov");
-            dataMap.put("zip", "79020");
-
-
-        HashMap<String, String> dataMap1 = new HashMap<>();
-
-        dataMap1.put("username", "problem_user");
-        dataMap1.put("password", "secret_sauce");
-        dataMap1.put("productName", "Sauce Labs Onesie");
-        dataMap1.put("name", "Max");
-        dataMap1.put("surname", "Horokhov");
-        dataMap1.put("zip", "79020");
-
-           return new Object[][] {{dataMap},
-                                  {dataMap1}};
+            List<HashMap<String, String>> data = convertJSONtoMap(System.getProperty("user.dir")+"//src//main//java//org//resources//PurchaseProduct.json");
+           return new Object[][] {{data.get(0)},
+                                  {data.get(1)}};
         }
 
 }

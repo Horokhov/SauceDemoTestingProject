@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27a6fb1f-e55b-4503-8d9b-f9975005fb5d" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/resources/DataReaderJSON.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/resources/PurchaseProduct.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testSuitesXML/catalogueFiltersTestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/tests/CatalogueFiltersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tests/CatalogueFiltersTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/tests/SubmitOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tests/PurchaseProductTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuitesXML/errorValidationTestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuitesXML/errorValidationTestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuitesXML/purchaseTestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuitesXML/purchaseTestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuitesXML/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuitesXML/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/resources/DataReaderJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/resources/DataReaderJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/testComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/testComponents/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/tests/PurchaseProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tests/PurchaseProductTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,17 +55,7 @@
       <recent name="C:\Users\max_h\IdeaProjects\SauceDemoTestingProject\testSuitesXML" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/purchaseTestSuite.xml">
-    <configuration name="C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/errorsTests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SauceDemoTestingProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/errorsTests.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.PurchaseProductTest">
     <configuration name="C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/catalogueFiltersTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemoTestingProject" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testSuitesXML/catalogueFiltersTestSuite.xml" />
@@ -111,13 +96,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PurchaseProductTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemoTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.tests.PurchaseProductTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PurchaseProductTest" />
         <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/purchaseTestSuite.xml" />
         <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/catalogueFiltersTestSuite.xml" />
         <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/errorValidationTestSuite.xml" />
         <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/errorsTests.xml" />
-        <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/errorsTests.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683774323981</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="1">
+      <created>1683776800338</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1683776800338</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
