@@ -55,7 +55,7 @@
       <recent name="C:\Users\max_h\IdeaProjects\SauceDemoTestingProject\testSuitesXML" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PurchaseProductTest">
+  <component name="RunManager" selected="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/purchaseTestSuite.xml">
     <configuration name="C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/catalogueFiltersTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemoTestingProject" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testSuitesXML/catalogueFiltersTestSuite.xml" />
@@ -115,8 +115,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PurchaseProductTest" />
         <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/purchaseTestSuite.xml" />
+        <item itemvalue="TestNG.PurchaseProductTest" />
         <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/catalogueFiltersTestSuite.xml" />
         <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/errorValidationTestSuite.xml" />
         <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/errorsTests.xml" />
