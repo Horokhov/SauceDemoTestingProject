@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Errors">
+    <groups>
+        <run>
+            <include name="Purchase"/>
+        </run>
+    </groups>
+    <test thread-count="5" name="SubmitOrderTest">
+        <classes>
+            <class name="org.tests.SubmitOrderTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="CatalogueFiltersTest">
+        <classes>
+            <class name="org.tests.CatalogueFiltersTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="ErrorValidationTest">
+        <classes>
+            <class name="org.tests.ErrorValidationTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="SocialsTest">
+        <classes>
+            <class name="org.tests.SocialsTest"/>
+        </classes>
+    </test>
+</suite>

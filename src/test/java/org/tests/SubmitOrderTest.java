@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.pageObjects.*;
 import org.testComponents.BaseTest;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -12,13 +13,11 @@ import java.time.Duration;
 import java.util.*;
 
 public class SubmitOrderTest extends  BaseTest {
-    private static String productName = "Sauce Labs Bolt T-Shirt";
 
+        @Test(dataProvider = "getData", groups = {"Purchase"})
+        public void submitOrder(String username, String password, String productName) throws IOException {
 
-        @Test
-        public void submitOrder() throws IOException {
-
-            ProductCatalogue productCatalogue = logInPage.loggination("standard_user", "secret_sauce" );
+            ProductCatalogue productCatalogue = logInPage.loggination(username, password );
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 
         productCatalogue.getProductByName(productName);
@@ -50,5 +49,12 @@ public class SubmitOrderTest extends  BaseTest {
 
        checkoutCompletePage.goToCatalogue();
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
-    }}
+    }
+    @DataProvider
+    public Object[][] getData() {
+           return new Object[][] {{"standard_user", "secret_sauce", "Sauce Labs Bolt T-Shirt" },
+                                  {"problem_user", "secret_sauce", "Sauce Labs Onesie"}};
+        }
+
+}
 
