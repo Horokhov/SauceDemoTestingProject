@@ -6,6 +6,9 @@
             <include name="Purchase"/>
         </run>
     </groups>
+    <listeners>
+        <listener class-name="org.testComponents.Listeners"></listener>
+    </listeners>
     <test thread-count="5" name="SubmitOrderTest">
         <classes>
             <class name="org.tests.PurchaseProductTest"/>

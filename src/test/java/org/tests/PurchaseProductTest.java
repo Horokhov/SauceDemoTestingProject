@@ -1,11 +1,15 @@
 package org.tests;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.pageObjects.*;
 import org.testComponents.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.*;
@@ -48,6 +52,7 @@ public class PurchaseProductTest extends  BaseTest {
        checkoutCompletePage.goToCatalogue();
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
     }
+
     @DataProvider
     public Object[][] getData() throws IOException {
 
