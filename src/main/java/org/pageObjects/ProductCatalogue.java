@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.file.WatchEvent;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,6 +35,21 @@ public class ProductCatalogue extends AbstractComponent {
 
     @FindBy(xpath = "//div[@class='right_component']//span//span")
     WebElement activeOption;
+
+    @FindBy(id = "react-burger-menu-btn")
+    WebElement menuButton;
+
+    @FindBy(id = "logout_sidebar_link")
+    WebElement logOutLink;
+
+    public void openMenu() {
+        menuButton.click();
+    }
+
+    public void logOut() {
+        logOutLink.click();
+    }
+
     By addToCart = By.tagName("button");
 
 

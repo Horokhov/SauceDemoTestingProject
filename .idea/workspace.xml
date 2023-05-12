@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27a6fb1f-e55b-4503-8d9b-f9975005fb5d" name="Changes" comment="1">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/tests/LogOutUsersTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testSuitesXML/logOutTestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/testComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/testComponents/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pageObjects/ProductCatalogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pageObjects/ProductCatalogue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,30 +57,10 @@
       <recent name="C:\Users\max_h\IdeaProjects\SauceDemoTestingProject\testSuitesXML" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/testng.xml">
-    <configuration name="C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/catalogueFiltersTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/logOutTestSuite.xml">
+    <configuration name="C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/logOutTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemoTestingProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testSuitesXML/catalogueFiltersTestSuite.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/purchaseTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SauceDemoTestingProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testSuitesXML/purchaseTestSuite.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/socialsTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SauceDemoTestingProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testSuitesXML/socialsTestSuite.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testSuitesXML/logOutTestSuite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -89,6 +72,41 @@
       <module name="SauceDemoTestingProject" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testSuitesXML/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogOutUsersTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemoTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.tests.LogOutUsersTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogOutUsersTest.logOut" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemoTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.tests.LogOutUsersTest" />
+      <option name="METHOD_NAME" value="logOut" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -114,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/logOutTestSuite.xml" />
+        <item itemvalue="TestNG.LogOutUsersTest" />
+        <item itemvalue="TestNG.LogOutUsersTest.logOut" />
         <item itemvalue="TestNG.PurchaseProductTest" />
         <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/testng.xml" />
-        <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/socialsTestSuite.xml" />
-        <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/purchaseTestSuite.xml" />
-        <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/catalogueFiltersTestSuite.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -348,7 +366,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683860366216</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="1">
+      <created>1683860965972</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1683860965972</updated>
+    </task>
+    <task id="LOCAL-00033" summary="1">
+      <created>1683861244950</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1683861244950</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

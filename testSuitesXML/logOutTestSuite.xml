@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="All Test Suite">
+<suite parallel="tests" name="Errors">
+    <groups>
+        <run>
+            <include name="LogOut"/>
+        </run>
+    </groups>
     <listeners>
         <listener class-name="org.testComponents.Listeners"></listener>
     </listeners>
