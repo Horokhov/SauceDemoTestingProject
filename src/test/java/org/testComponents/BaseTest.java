@@ -35,14 +35,16 @@ public class BaseTest {
        //String browserName = properties.getProperty("browser");
 
         if(browserName.contains("chrome")) {
-
+            //driver = new ChromeDriver();
            ChromeOptions options = new ChromeOptions();
 
            if(browserName.contains("headless")) {
-               options.addArguments("headless");
+               options.addArguments("--headless");
+               options.setHeadless(true);
+               driver = new ChromeDriver(options);
            }
 
-           driver = new ChromeDriver();
+
 
         } else if (browserName.equalsIgnoreCase("firefox")) {
 
