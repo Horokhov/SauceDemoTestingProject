@@ -4,7 +4,6 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -35,14 +34,13 @@ public class BaseTest {
         String browserName = System.getProperty("browser")!=null ? System.getProperty("browser") :properties.getProperty("browser");
        //String browserName = properties.getProperty("browser");
 
-       if(browserName.contains("chrome")) {
+        if(browserName.contains("chrome")) {
 
            ChromeOptions options = new ChromeOptions();
 
            if(browserName.contains("headless")) {
                options.addArguments("headless");
            }
-           driver.manage().window().setSize(new Dimension(1920,1080));
 
            driver = new ChromeDriver();
 
