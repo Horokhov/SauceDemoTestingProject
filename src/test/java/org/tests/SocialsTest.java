@@ -12,7 +12,7 @@ import java.util.List;
 
 public class SocialsTest extends BaseTest {
 
-    @Test(retryAnalyzer = RetryAnalyzer.class)
+    @Test(groups = {"Socials"},retryAnalyzer = RetryAnalyzer.class)
     public void brokenSocialsTest() throws IOException {
         ProductCatalogue productCatalogue = logInPage.loggination("standard_user", "secret_sauce" );
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
