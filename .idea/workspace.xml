@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27a6fb1f-e55b-4503-8d9b-f9975005fb5d" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/testSuitesXML/socialsTestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/tests/SocialsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tests/SocialsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +54,7 @@
       <recent name="C:\Users\max_h\IdeaProjects\SauceDemoTestingProject\testSuitesXML" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/socialsTestSuite.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/testng.xml">
     <configuration name="C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/catalogueFiltersTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemoTestingProject" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testSuitesXML/catalogueFiltersTestSuite.xml" />
@@ -116,8 +114,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/socialsTestSuite.xml" />
         <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/testng.xml" />
+        <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/socialsTestSuite.xml" />
         <item itemvalue="TestNG.PurchaseProductTest" />
         <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/purchaseTestSuite.xml" />
         <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/catalogueFiltersTestSuite.xml" />
@@ -280,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683847089087</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="1">
+      <created>1683852939862</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1683852939862</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
