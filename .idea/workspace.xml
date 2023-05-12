@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27a6fb1f-e55b-4503-8d9b-f9975005fb5d" name="Changes" comment="1">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,9 +113,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PurchaseProductTest" />
         <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/testng.xml" />
         <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/socialsTestSuite.xml" />
-        <item itemvalue="TestNG.PurchaseProductTest" />
         <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/purchaseTestSuite.xml" />
         <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/catalogueFiltersTestSuite.xml" />
       </list>
@@ -304,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683857561626</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="1">
+      <created>1683857843436</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1683857843436</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
