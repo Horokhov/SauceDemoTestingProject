@@ -30,7 +30,8 @@ public class BaseTest {
         FileInputStream fis = new FileInputStream("C:\\Users\\max_h\\IdeaProjects\\SauceDemoTestingProject\\src\\main\\java\\org\\resources\\GlobalData.properties");
 
         properties.load(fis);
-        String browserName = properties.getProperty("browser");
+        String browserName = System.getProperty("browser")!=null ? System.getProperty("browser") :properties.getProperty("browser");
+       // String browserName = properties.getProperty("browser");
 
        if(browserName.equalsIgnoreCase("chrome")) {
 
