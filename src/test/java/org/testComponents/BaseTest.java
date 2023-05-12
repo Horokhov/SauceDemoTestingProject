@@ -10,7 +10,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.pageObjects.LogInPage;
 import org.testng.annotations.*;
 
@@ -35,24 +37,43 @@ public class BaseTest {
        //String browserName = properties.getProperty("browser");
 
         if(browserName.contains("chrome")) {
-            //driver = new ChromeDriver();
+
            ChromeOptions options = new ChromeOptions();
 
            if(browserName.contains("headless")) {
                options.addArguments("--headless");
                options.setHeadless(true);
                driver = new ChromeDriver(options);
+           } else {
+               driver = new ChromeDriver();
            }
 
 
 
-        } else if (browserName.equalsIgnoreCase("firefox")) {
+        } else if (browserName.contains("firefox")) {
 
-           driver = new FirefoxDriver();
+            FirefoxOptions options = new FirefoxOptions();
 
-       } else if (browserName.equalsIgnoreCase("edge")) {
+            if(browserName.contains("headless")) {
+                options.addArguments("--headless");
+                options.setHeadless(true);
+                driver = new FirefoxDriver(options);
+            } else {
+                driver = new FirefoxDriver();
+            }
 
-           driver = new EdgeDriver();
+
+       } else if (browserName.contains("edge")) {
+
+            EdgeOptions options = new EdgeOptions();
+
+            if(browserName.contains("headless")) {
+                options.addArguments("--headless");
+                options.setHeadless(true);
+                driver = new EdgeDriver(options);
+            } else {
+                driver = new EdgeDriver();
+            }
 
        }
        driver.manage().window().maximize();
