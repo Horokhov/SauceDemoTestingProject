@@ -1,18 +1,27 @@
 package org.pageObjects;
 
 import org.abstractComponents.AbstractComponent;
+import org.apache.hc.client5.http.classic.methods.HttpGet;
+import org.asynchttpclient.DefaultAsyncHttpClient;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.http.HttpResponse;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+
+import java.awt.*;
+import java.awt.image.FilteredImageSource;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.WatchEvent;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
 
 public class ProductCatalogue extends AbstractComponent {
@@ -47,6 +56,9 @@ public class ProductCatalogue extends AbstractComponent {
 
     @FindBy(id = "reset_sidebar_link")
     WebElement resetAppLink;
+
+    @FindBy(xpath = "//img")
+    List<WebElement> images;
 
     public void openMenu() {
         menuButton.click();
@@ -93,6 +105,19 @@ public class ProductCatalogue extends AbstractComponent {
         }
         return codes;
     }
+
+    public List<String> isImageExists() throws IOException {
+
+        List<String> byteCode = new ArrayList<>();
+        for (WebElement img : images) {
+
+            String encodedImg = img.getDomAttribute("src");  //+"https://www.saucedemo.com";
+            //System.out.println(encodedImg);
+        }
+        return byteCode;
+    }
+
+
     public WebElement getProductByName(String productName) {
         WebElement boltsTshirt = getProductList().stream().filter(tshirt ->
                 tshirt.findElement(By.className("inventory_item_name")).getText().equals(productName)).findFirst().orElse(null);

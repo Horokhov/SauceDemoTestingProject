@@ -12,21 +12,22 @@ import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
 
-public class SocialsTest extends BaseTest {
+public class BrokenImagesTest extends BaseTest {
 
-    @Test(dataProvider = "getData", groups = {"Socials"},retryAnalyzer = RetryAnalyzer.class)
+    @Test(dataProvider = "getData", groups = {"Images"}, retryAnalyzer = RetryAnalyzer.class)
     public void brokenSocialsTest(HashMap<String, String> input) throws IOException {
-        ProductCatalogue productCatalogue = logInPage.loggination(input.get("username"), input.get("password") );
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        ProductCatalogue productCatalogue = logInPage.loggination(input.get("username"),input.get("password"));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
-        List<Integer> socialLinksCodes = productCatalogue.getSocialLinksCodes("HEAD");
+        List<String> imgStatusCodes = productCatalogue.isImageExists();
 
         SoftAssert softAssert = new SoftAssert();
 
-        for(int codes:socialLinksCodes) {
-            softAssert.assertTrue(codes < 400, "Social link is broken code: " + codes);
+        for (String images : imgStatusCodes) {
+            softAssert.assertTrue(images.contains("data:image/png;base64"));
             softAssert.assertAll();
-        }}
+        }
+    }
     @DataProvider
     public Object[][] getData() throws IOException {
 
@@ -34,10 +35,4 @@ public class SocialsTest extends BaseTest {
         return new Object[][] {{data.get(0)},
                 {data.get(1)}};
     }
-
-
-
-
-    }
-
-
+}

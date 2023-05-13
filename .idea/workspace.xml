@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27a6fb1f-e55b-4503-8d9b-f9975005fb5d" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/tests/ResetAppStateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testSuitesXML/resetAppTestSuite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/tests/BrokenImagesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testSuitesXML/brokenImagesTestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/pageObjects/ProductCatalogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pageObjects/ProductCatalogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/tests/SocialsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tests/SocialsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testSuitesXML/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuitesXML/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +58,7 @@
       <recent name="C:\Users\max_h\IdeaProjects\SauceDemoTestingProject\testSuitesXML" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ResetAppStateTest">
+  <component name="RunManager" selected="TestNG.BrokenImagesTest">
     <configuration name="AboutRedirectionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemoTestingProject" />
       <extension name="coverage">
@@ -75,17 +76,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/logOutTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SauceDemoTestingProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testSuitesXML/logOutTestSuite.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogOutUsersTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BrokenImagesTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemoTestingProject" />
       <extension name="coverage">
         <pattern>
@@ -94,7 +85,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.tests.LogOutUsersTest" />
+      <option name="MAIN_CLASS_NAME" value="org.tests.BrokenImagesTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -102,7 +93,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoveProductTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CatalogueFiltersTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemoTestingProject" />
       <extension name="coverage">
         <pattern>
@@ -111,7 +102,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.tests.RemoveProductTest" />
+      <option name="MAIN_CLASS_NAME" value="org.tests.CatalogueFiltersTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -136,13 +127,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SocialsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemoTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.tests.SocialsTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.BrokenImagesTest" />
+        <item itemvalue="TestNG.CatalogueFiltersTest" />
+        <item itemvalue="TestNG.SocialsTest" />
         <item itemvalue="TestNG.ResetAppStateTest" />
         <item itemvalue="TestNG.AboutRedirectionTest" />
-        <item itemvalue="TestNG.RemoveProductTest" />
-        <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/logOutTestSuite.xml" />
-        <item itemvalue="TestNG.LogOutUsersTest" />
       </list>
     </recent_temporary>
   </component>
@@ -414,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683966797190</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="1">
+      <created>1683967447971</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1683967447971</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
