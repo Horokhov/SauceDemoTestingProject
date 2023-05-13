@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27a6fb1f-e55b-4503-8d9b-f9975005fb5d" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/tests/AboutRedirectionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testSuitesXML/aboutRedirectionTestSuite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/tests/ResetAppStateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testSuitesXML/resetAppTestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/pageObjects/ProductCatalogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pageObjects/ProductCatalogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuitesXML/catalogueFiltersTestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuitesXML/catalogueFiltersTestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuitesXML/logOutTestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuitesXML/logOutTestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuitesXML/purchaseTestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuitesXML/purchaseTestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuitesXML/removeProductTestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuitesXML/removeProductTestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuitesXML/socialsTestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuitesXML/socialsTestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testSuitesXML/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuitesXML/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +57,7 @@
       <recent name="C:\Users\max_h\IdeaProjects\SauceDemoTestingProject\testSuitesXML" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AboutRedirectionTest">
+  <component name="RunManager" selected="TestNG.ResetAppStateTest">
     <configuration name="AboutRedirectionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemoTestingProject" />
       <extension name="coverage">
@@ -107,24 +102,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogOutUsersTest.logOut" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SauceDemoTestingProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.tests.LogOutUsersTest" />
-      <option name="METHOD_NAME" value="logOut" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RemoveProductTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemoTestingProject" />
       <extension name="coverage">
@@ -142,13 +119,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ResetAppStateTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemoTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.tests.ResetAppStateTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ResetAppStateTest" />
         <item itemvalue="TestNG.AboutRedirectionTest" />
         <item itemvalue="TestNG.RemoveProductTest" />
         <item itemvalue="TestNG.C:/Users/max_h/IdeaProjects/SauceDemoTestingProject/testSuitesXML/logOutTestSuite.xml" />
         <item itemvalue="TestNG.LogOutUsersTest" />
-        <item itemvalue="TestNG.LogOutUsersTest.logOut" />
       </list>
     </recent_temporary>
   </component>
@@ -413,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683965850685</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="1">
+      <created>1683966797190</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1683966797190</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

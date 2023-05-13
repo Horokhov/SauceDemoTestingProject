@@ -45,6 +45,9 @@ public class ProductCatalogue extends AbstractComponent {
     @FindBy(id = "about_sidebar_link")
     WebElement aboutLink;
 
+    @FindBy(id = "reset_sidebar_link")
+    WebElement resetAppLink;
+
     public void openMenu() {
         menuButton.click();
     }
@@ -54,6 +57,8 @@ public class ProductCatalogue extends AbstractComponent {
     }
 
     public void aboutRedirection(){aboutLink.click();}
+
+    public void resetApp(){resetAppLink.click();}
 
     By addToCart = By.tagName("button");
 

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="All Test Suite">
+<suite parallel="tests" name="About">
+    <groups>
+        <run>
+            <include name="ResetApp"/>
+        </run>
+    </groups>
     <listeners>
         <listener class-name="org.testComponents.Listeners"></listener>
     </listeners>
@@ -24,16 +29,6 @@
             <class name="org.tests.SocialsTest"/>
         </classes>
     </test>
-    <test thread-count="5" name="LogOut">
-        <classes>
-            <class name="org.tests.LogOutUsersTest"/>
-        </classes>
-    </test>
-    <test thread-count="5" name="LogOut">
-        <classes>
-            <class name="org.tests.RemoveProductTest"/>
-        </classes>
-    </test>
     <test thread-count="5" name="AboutRedirection">
         <classes>
             <class name="org.tests.AboutRedirectionTest"/>
@@ -44,4 +39,7 @@
             <class name="org.tests.ResetAppStateTest"/>
         </classes>
     </test>
+
+
+
 </suite>
