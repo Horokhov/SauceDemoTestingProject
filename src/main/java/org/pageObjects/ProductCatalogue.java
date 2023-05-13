@@ -42,6 +42,7 @@ public class ProductCatalogue extends AbstractComponent {
     @FindBy(id = "logout_sidebar_link")
     WebElement logOutLink;
 
+
     public void openMenu() {
         menuButton.click();
     }
@@ -57,6 +58,7 @@ public class ProductCatalogue extends AbstractComponent {
         String activeFilter = activeOption.getAttribute("innerHTML");
         return activeFilter;
     }
+
 
     public void filterCatalogue(String visibleText) {
         Select select = new Select(filterDropdown);
