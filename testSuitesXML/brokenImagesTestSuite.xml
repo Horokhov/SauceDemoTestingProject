@@ -3,7 +3,7 @@
 <suite parallel="tests" name="About">
     <groups>
         <run>
-            <include name="About"/>
+            <include name="Images"/>
         </run>
     </groups>
     <listeners>
