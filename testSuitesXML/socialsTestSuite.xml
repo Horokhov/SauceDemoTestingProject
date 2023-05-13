@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Errors">
+<suite parallel="tests" name="Socials">
     <groups>
         <run>
             <include name="Socials"/>

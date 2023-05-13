@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Filter">
+<suite parallel="tests" name="About">
     <groups>
         <run>
-            <include name="Filter"/>
+            <include name="About"/>
         </run>
     </groups>
     <listeners>
@@ -29,4 +29,12 @@
             <class name="org.tests.SocialsTest"/>
         </classes>
     </test>
+    <test thread-count="5" name="AboutRedirection">
+        <classes>
+            <class name="org.tests.AboutRedirectionTest"/>
+        </classes>
+    </test>
+
+
+
 </suite>

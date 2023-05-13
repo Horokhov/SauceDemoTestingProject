@@ -34,4 +34,9 @@
             <class name="org.tests.RemoveProductTest"/>
         </classes>
     </test>
+    <test thread-count="5" name="AboutRedirection">
+        <classes>
+            <class name="org.tests.AboutRedirectionTest"/>
+        </classes>
+    </test>
 </suite>

@@ -42,6 +42,8 @@ public class ProductCatalogue extends AbstractComponent {
     @FindBy(id = "logout_sidebar_link")
     WebElement logOutLink;
 
+    @FindBy(id = "about_sidebar_link")
+    WebElement aboutLink;
 
     public void openMenu() {
         menuButton.click();
@@ -51,8 +53,9 @@ public class ProductCatalogue extends AbstractComponent {
         logOutLink.click();
     }
 
-    By addToCart = By.tagName("button");
+    public void aboutRedirection(){aboutLink.click();}
 
+    By addToCart = By.tagName("button");
 
     public String getActiveOption(){
         String activeFilter = activeOption.getAttribute("innerHTML");
@@ -95,4 +98,6 @@ public class ProductCatalogue extends AbstractComponent {
         WebElement product = getProductByName(productName);
         product.findElement(addToCart).click();
     }
+
+
 }
