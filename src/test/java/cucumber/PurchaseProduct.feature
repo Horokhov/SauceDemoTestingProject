@@ -4,7 +4,7 @@ Feature: Purchase the product from saucedemo.com website
   Background:
     Given Landed on the website
 
-  @Regression
+  @Purchase
   Scenario Outline: Positive test of purchasing a product
     Given Logged in with <username> and <password>
     When Product with name <productName> is added to Cart
