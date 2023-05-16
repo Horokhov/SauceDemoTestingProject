@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27a6fb1f-e55b-4503-8d9b-f9975005fb5d" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/tests/BrokenImagesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testSuitesXML/brokenImagesTestSuite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/PurchaseProduct.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/TestNGRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cucumberStepDefinitions/PurchaseProductDefiniton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pageObjects/ProductCatalogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pageObjects/ProductCatalogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/tests/SocialsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tests/SocialsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuitesXML/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuitesXML/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,24 +56,7 @@
       <recent name="C:\Users\max_h\IdeaProjects\SauceDemoTestingProject\testSuitesXML" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.BrokenImagesTest">
-    <configuration name="AboutRedirectionTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SauceDemoTestingProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.tests.AboutRedirectionTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.TestNGRunner">
     <configuration name="BrokenImagesTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemoTestingProject" />
       <extension name="coverage">
@@ -110,7 +91,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResetAppStateTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PurchaseProductTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemoTestingProject" />
       <extension name="coverage">
         <pattern>
@@ -119,7 +100,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.tests.ResetAppStateTest" />
+      <option name="MAIN_CLASS_NAME" value="org.tests.PurchaseProductTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -144,13 +125,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestNGRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemoTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cucumber" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.TestNGRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestNGRunner" />
+        <item itemvalue="TestNG.PurchaseProductTest" />
         <item itemvalue="TestNG.BrokenImagesTest" />
         <item itemvalue="TestNG.CatalogueFiltersTest" />
         <item itemvalue="TestNG.SocialsTest" />
-        <item itemvalue="TestNG.ResetAppStateTest" />
-        <item itemvalue="TestNG.AboutRedirectionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -429,8 +427,27 @@
       <option name="project" value="LOCAL" />
       <updated>1683967447971</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="1">
+      <created>1683975586003</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1683975586003</updated>
+    </task>
+    <task id="LOCAL-00040" summary="1">
+      <created>1683975721740</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1683975721740</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:io.cucumber:cucumber-java" />
+    <option featureType="dependencySupport" implementationName="java:io.reactivex.rxjava3:rxjava" />
+    <option featureType="dependencySupport" implementationName="java:org.seleniumhq.selenium:selenium-java" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -446,5 +463,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <option name="LAST_COMMIT_MESSAGE" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="productCatalogue" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
