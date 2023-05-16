@@ -1,5 +1,5 @@
 # SauceDemoTestingProject
-Testing [SauceDemo](https://www.saucedemo.com/) website & building framework using Selenium, TestNG, Jenkins, Maven Surefire Plugin, ExtentReport, SeleniumGrid, Jackson DataBind, Cucumber JVM: Java
+Testing [SauceDemo](https://www.saucedemo.com/) website & building framework using Selenium, TestNG, Jenkins, Maven Surefire Plugin, ExtentReport, SeleniumGrid, Jackson DataBind, Cucumber BDD
 
 Jenkins configuration screenshots+Data:
 
