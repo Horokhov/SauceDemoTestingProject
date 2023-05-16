@@ -85,7 +85,7 @@
               <version>3.1.0</version>
               <configuration>
                 <includes>
-                   <include>test/java/cucumber.TestNGRunner</include>
+                   <include>test/java/cucumber.TestNGRunner.java</include>
                  </includes>
               </configuration>
             </plugin>

@@ -24,7 +24,7 @@
             <class name="org.tests.SocialsTest"/>
         </classes>
     </test>
-    <test thread-count="5" name="">
+    <test thread-count="5" name="LogOut">
         <classes>
             <class name="org.tests.LogOutUsersTest"/>
         </classes>
