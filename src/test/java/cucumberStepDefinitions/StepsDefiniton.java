@@ -78,8 +78,8 @@ public class StepsDefiniton extends BaseTest {
         driver.close();
     }
 
-//    @Then("^Unique error (.+) is displayed$")
-//    public void logginationError(String message){
-//        Assert.assertEquals(message,logInPage.getErrorMessage());
-//    }
+    @Then("^Unique error (.+) is displayed$")
+    public void logginationError(String message){
+        Assert.assertEquals(message,logInPage.getErrorMessage());
+    }
 }
