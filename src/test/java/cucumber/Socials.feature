@@ -1,7 +1,7 @@
 Feature: Verify that social links are not broken
 
 
-  @Main
+  @Regression
   Scenario Outline: Positive test of identifying broken social links
     Given Landed on the website
     When Logged in with <username> and <password>

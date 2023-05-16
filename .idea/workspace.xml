@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a6fb1f-e55b-4503-8d9b-f9975005fb5d" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/AboutRedirection.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/BrokenImages.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/CatalogueFiltersTest.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/LogOut.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/RemoveProduct.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/ResetApp.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/cucumber.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/cucumber.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/ErrorValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/ErrorValidation.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/PurchaseProduct.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/PurchaseProduct.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/TestNGRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/TestNGRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cucumberStepDefinitions/StepsDefiniton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumberStepDefinitions/StepsDefiniton.java" afterDir="false" />
-    </list>
+    <list default="true" id="27a6fb1f-e55b-4503-8d9b-f9975005fb5d" name="Changes" comment="1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,13 +147,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683593948216</updated>
-    </task>
-    <task id="LOCAL-00001" summary="1">
-      <created>1683594174928</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1683594174929</updated>
     </task>
     <task id="LOCAL-00002" summary="1">
       <created>1683607256906</created>
@@ -504,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684275368311</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="1">
+      <created>1684281027957</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1684281027957</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="UnknownFeatures">
