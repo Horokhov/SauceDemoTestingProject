@@ -1,7 +1,7 @@
 Feature: Validation errors during loggination
 
   @Regression
-  Scenario Outline: Positive test of purchasing a product
+  Scenario Outline: Negative tests of loggination
     Given Landed on the website
     When Logged in with <username> and <password>
     Then Unique error <message> is displayed
