@@ -10,9 +10,8 @@ import org.testng.Assert;
 
 import java.io.IOException;
 import java.time.Duration;
-import java.util.List;
 
-public class PurchaseProductDefiniton extends BaseTest {
+public class StepsDefiniton extends BaseTest {
 
     public LogInPage logInPage;
     public ProductCatalogue productCatalogue;
@@ -77,5 +76,10 @@ public class PurchaseProductDefiniton extends BaseTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
         driver.close();
+    }
+
+    @Then("^Unique error (.+) is displayed$")
+    public void logginationError(String message){
+        Assert.assertEquals(message,logInPage.getErrorMessage());
     }
 }
