@@ -85,7 +85,7 @@
               <version>3.1.0</version>
               <configuration>
                 <suiteXmlFiles>
-                  <suiteXmlFile>**/TestNGRunner.java</suiteXmlFile>
+                  <suiteXmlFile>test/java/cucumber.TestNGRunner</suiteXmlFile>
                 </suiteXmlFiles>
               </configuration>
             </plugin>
