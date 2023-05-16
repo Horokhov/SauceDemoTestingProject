@@ -20,6 +20,7 @@ RemoveProduct
 AboutRedirection
 ResetApp
 Image
+CucumberTests
 
 This project is parametrized -> Choice Parameter
 name: browserName
